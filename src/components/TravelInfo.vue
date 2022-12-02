@@ -7,8 +7,8 @@
     <div class="info font-sm">
       <div>{{ operatingAirline }}</div>
       <hr />
-      <div>
-        {{ duration }} ·
+      <div class="duration">
+        <span> {{ duration }} ·&nbsp;</span>
         <span v-if="travelInfo.segments.length > 1">
           {{ travelInfo.segments.length - 1 }}
           {{ travelInfo.segments.length > 2 ? "stops" : "stop" }}
@@ -81,6 +81,11 @@ const duration = computed(() => {
 .info {
   text-align: center;
   margin: 0 1rem;
+}
+.duration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .arrival {
   text-align: end;
