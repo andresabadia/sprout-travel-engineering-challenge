@@ -1,47 +1,40 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import TheHeading from "./components/TheHeading.vue";
+import TravelList from "./components/TravelList.vue";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <TheHeading heading="Travel Engineering Challenge" />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <TravelList />
   </main>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
+  @media (min-width: 1024px) {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-  }
 
-  .logo {
-    margin: 0 2rem 0 0;
+    .wrapper {
+      display: flex;
+      place-items: flex-start;
+      flex-wrap: wrap;
+    }
   }
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+main {
+  margin-top: 4rem;
+  @media (min-width: 1024px) {
+    margin-top: 0;
   }
 }
 </style>
