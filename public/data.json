@@ -1,0 +1,30 @@
+[
+  {
+    "name": "andres",
+    "itinerary": [
+      { "from": "here", "to": "there" },
+      { "from": "there", "to": "here" }
+    ]
+  },
+  {
+    "name": "alejandro",
+    "itinerary": [
+      { "from": "here", "to": "there" },
+      { "from": "there", "to": "here" }
+    ]
+  },
+  {
+    "name": "abadia",
+    "itinerary": [
+      { "from": "here", "to": "there" },
+      { "from": "there", "to": "here" }
+    ]
+  },
+  {
+    "name": "cardona",
+    "itinerary": [
+      { "from": "here", "to": "there" },
+      { "from": "there", "to": "here" }
+    ]
+  }
+]
