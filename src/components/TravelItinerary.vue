@@ -1,17 +1,17 @@
 <template>
   <div class="travel-itinerary">
     <TravelInfo
-      v-for="travelInfo in travel.itinerary"
-      :travelInfo="travelInfo"
+      v-for="travelJourney in travel.journeys"
+      :travelInfo="travelJourney"
     />
   </div>
 </template>
 <script lang="ts" setup>
-import type { Travel } from "@/models/Travel";
+import type { TravelOption } from "@/models/Travel";
 import TravelInfo from "./TravelInfo.vue";
 
 defineProps<{
-  travel: Travel;
+  travel: TravelOption;
 }>();
 </script>
 <style lang="scss" scoped>

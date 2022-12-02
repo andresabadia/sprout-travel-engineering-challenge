@@ -1,11 +1,13 @@
 <template>
-  <div class="travel-info">{{ travelInfo }}</div>
+  <div class="travel-info">
+    {{ travelInfo }}
+  </div>
 </template>
 <script lang="ts" setup>
-import type { TravelInfo } from "@/models/Travel";
+import type { TravelJourney } from "@/models/Travel";
 
 defineProps<{
-  travelInfo: TravelInfo;
+  travelInfo: TravelJourney;
 }>();
 </script>
 
